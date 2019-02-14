@@ -1,0 +1,36 @@
+<html>
+<body>
+<h2>JavaScript Array.forEach()</h2>
+<p id="demo"></p>
+<h2>JavaScript Array.map()</h2>
+<p id="abc"></p>
+<h2>JavaScript Array.filter()</h2>
+<p id="def"></p>
+<h2>JavaScript Array.reduce()</h2>
+<p id="ghi"></p>
+<script>
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+var numbers2 = numbers.map(myFunction);
+document.getElementById("abc").innerHTML = numbers2;
+var over18 = numbers.filter(myFun);
+document.getElementById("def").innerHTML = over18;
+var sum = numbers.reduce(myF);
+document.getElementById("ghi").innerHTML = "The sum is " + sum;
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>"; 
+return value * 2;
+}
+function myFun(value, index, array) {
+return value > 18;
+}
+function myF(total, value, index, array) {
+  return total + value;
+}
+</script>
+
+</body>
+</html>
+

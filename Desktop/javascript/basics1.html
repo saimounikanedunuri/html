@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>basics!</title>
+</head>
+<body>
+<b>length of "qwertyuiop" is:</b>
+<p id="ghi"></p>
+<b>index of 'u' in "qwertyuiop" is:</b>
+<p id="abc"></p>
+<b>last index of 'abc' in "abc def abc" is:</b>
+<p id="def"></p>
+<b>slice:-to get the part of a string:</b>
+<p id="jkl"></p>
+<b>slice:</b>
+<p id="mno"></p>
+<b>substring method:</b>
+<p id="pqr"></p>
+<b>Uppercase of abc:</b>
+<p id="stu"></p>
+<b>Lowercase of DEF:</b>
+<p id="vwx"></p>
+<b>concatination:</b>
+<p id="yz"></p>
+<b>trim:- to remove white spaces:</b>
+<p id="ab"></p>
+<b>charAt method:</b>
+<p id="cd"></p>
+<b>charcode:-unicode:</b>
+<p id="ef"></p>
+<b>property access:</b>
+<p id="gh"></p>
+<script>
+var a="qwertyuiop"
+var b=a.length;
+document.getElementById("ghi").innerHTML=b;
+var c=a.indexOf("u");
+document.getElementById("abc").innerHTML=c;
+var d="abc def abc";
+var e=d.lastIndexOf("abc");
+document.getElementById("def").innerHTML=e;
+var f="apple,ball,cat";
+g=f.slice(6,10);
+document.getElementById("jkl").innerHTML=g;
+h=f.slice(6);
+document.getElementById("mno").innerHTML=h;
+i=f.substring(11,14);
+document.getElementById("pqr").innerHTML=i;
+var j="abc";
+var k=j.toUpperCase();
+document.getElementById("stu").innerHTML=k;
+var l="DEF";
+var m=l.toLowerCase();
+document.getElementById("vwx").innerHTML=m;
+var n=j.concat(" ",m);
+document.getElementById("yz").innerHTML=n;
+var o="	ghi jkl  .";
+p=o.trim();
+document.getElementById("ab").innerHTML=p;
+var q=l.charAt(0);
+document.getElementById("cd").innerHTML=q;
+var r=l.charCodeAt(0);
+document.getElementById("ef").innerHTML=r;
+var s=l[1];
+document.getElementById("gh").innerHTML=s;
+</script>
+</body>
+</html>

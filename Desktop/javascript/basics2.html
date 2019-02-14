@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>basics2</title>
+</head>
+<body>
+<u><i>converting arrays to strings:</i></u>
+<p id="abc"></p>
+<u><i>join method:</i></u>
+<p id="def"></p>
+<u><i>pop method:</i></u>
+<p id="ghi"></p>
+<u><i>push method:</i></u>
+<p id="jkl"></p>
+<u><i>removes 1st element using shift method:</i></u>
+<p id="mno"></p>
+<u><i>adds new element in 1st position using unshift method:</i></u>
+<p id="pqr"></p>
+<u><i>changing elements:</i></u>
+<p id="stu"></p>
+<u><i>append using length:</i></u>
+<p id="vwx"></p>
+<u><i>deleting elements:</i></u>
+<p id="yz"></p>
+</body>
+<script>
+var a=["xyz","pqr","jkl"];
+document.getElementById("abc").innerHTML=a.toString();
+document.getElementById("def").innerHTML=a.join("*");
+document.getElementById("ghi").innerHTML=a.pop();
+a.push("qwe");
+document.getElementById("jkl").innerHTML=a;
+a.shift();
+document.getElementById("mno").innerHTML=a;
+a.unshift("rty");
+document.getElementById("pqr").innerHTML=a;
+a[1]="uio";
+document.getElementById("stu").innerHTML=a;
+a[a.length]="asd";
+document.getElementById("vwx").innerHTML=a;
+delete a[2];
+document.getElementById("yz").innerHTML=a;
+</script>
+</html>
